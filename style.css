@@ -292,3 +292,32 @@ body {
     font-size: 0.9rem !important;
   }
 }
+
+/* Stylování nadpisu pro starší singly */
+.section-title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--text-muted);
+  margin-bottom: 40px;
+  position: relative;
+}
+
+/* Mírné potlačení staršího singlu oproti novince, aby novinka víc vynikla */
+.older-tracks .cover-container {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+.older-tracks:hover .cover-container {
+  opacity: 1;
+}
+
+/* Do textového loopu vespod přidán zelený kód pro track Update Main */
+.lyrics-visual div:nth-child(3) {
+  color: #39ff14; /* Matrix zelená pro programování */
+  font-family: 'Courier New', monospace;
+  font-size: 1.3rem;
+  opacity: 0.7;
+}
