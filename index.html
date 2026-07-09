@@ -7,6 +7,8 @@
     <link rel="icon" type="image/png" href="logo_VLCR.png" />
     <link rel="stylesheet" href="style.css" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,7 +17,6 @@
     />
   </head>
   <body>
-    <!-- Navigace upravená do tmavého stylu -->
     <section class="menu">
       <a href="index.html" class="horizontal-flex" style="justify-content: flex-start">
         <img src="logo_VLCR.png" alt="Logo VLČR" class="logo" />
@@ -27,7 +28,6 @@
     </section>
 
     <section class="content">
-      <!-- Sekce O nás (Hero) -->
       <div class="hero-section">
         <div class="container">
           <h1>
@@ -37,16 +37,33 @@
           <p class="hero-p">
             Jsme hudební odnož studentské iniciativy VLČR. Spojujeme preciznost techniky, pulzující elektronické rytmy a minimalistické vokály. Náš zvuk definují analogové basy, moderní synth melodie a syrová energie nočního města.
           </p>
+          
+          <div class="platforms-container">
+            <p class="platforms-title">Najdete nás na platformách</p>
+            <div class="platforms-grid">
+              <a href="https://open.spotify.com/artist/1xj1hPo4P0BVpYN6vuBd14" target="_blank" class="platform-link" title="Spotify">
+                <i class="fab fa-spotify"></i><span>Spotify</span>
+              </a>
+              <a href="https://music.apple.com/gb/artist/vl%C4%8Dr/6787277851" target="_blank" class="platform-link" title="Apple Music">
+                <i class="fab fa-apple"></i><span>Apple Music</span>
+              </a>
+              <a href="https://tidal.com/artist/82054098" target="_blank" class="platform-link" title="Tidal">
+                <i class="fas fa-wave-square"></i><span>Tidal</span>
+              </a>
+              <a href="https://www.deezer.com/cs/artist/401992681" target="_blank" class="platform-link" title="Deezer">
+                <i class="fab fa-deezer"></i><span>Deezer</span>
+              </a>
+            </div>
+          </div>
+
         </div>
       </div>
 
       <div class="separator-full"></div>
 
-      <!-- NOVÝ SINGL: Update main -->
       <div class="single-section modern-synth">
         <div class="single-grid">
           <div class="cover-container">
-            <!-- Sem vložíte obrázek nového coveru, např. cover_update.png -->
             <img src="updatemain.jpeg" alt="Update main Cover Art" class="cover-art" style="background: linear-gradient(135deg, #00f0ff, #7b2cbf);" />
           </div>
           <div class="single-info">
@@ -56,7 +73,7 @@
               Kybernetická fúze programování, elektrotechniky a hutných synťáků. Skladba inspirovaná nekonečnými řádky kódu, kompilací a čistou digitální energií. Propojení světa IT a nekompromisního beatu.
             </p>
             <div class="cta-buttons">
-              <a href="https://www.youtube.com/watch?v=eutkKWoXTHc" target="_blank" class="btn btn-spotify">
+              <a href="https://open.spotify.com/artist/1xj1hPo4P0BVpYN6vuBd14" target="_blank" class="btn btn-spotify">
                 <span>Poslouchejte</span>
               </a>
               <a href="https://www.youtube.com/watch?v=eutkKWoXTHc" target="_blank" class="btn btn-youtube">
@@ -69,7 +86,6 @@
 
       <div class="separator-full"></div>
 
-      <!-- STARŠÍ SINGL: Chodník uzavřen -->
       <div class="single-section older-tracks">
         <h3 class="section-title">Předchozí tvorba</h3>
         <div class="single-grid">
@@ -96,14 +112,13 @@
 
       <div class="separator-full"></div>
 
-      <!-- NĚCO NAVÍC: Sekce Vibe & Text (Hypnotický loop) -->
       <div class="lyrics-section">
         <h3>Lyrická dekonstrukce</h3>
         <p class="sub-heading">Jednoduchost v opakování. Čistý rytmus slov.</p>
         <div class="lyrics-visual">
           <div class="lyric-row loop-1">CHODNÍK UZAVŘEN // CHODNÍK UZAVŘEN</div>
           <div class="lyric-row loop-2">HAJR BI OLIVER // HAJR BI OLIVER</div>
-          <div class="lyric-row loop-1">git commit -m "Update main" // git push</div>
+          <div class="lyric-row loop-git">git commit -m "Update main" // git push</div>
           <div class="lyric-row loop-3">SYNTH // MELODIE // BICÍ // PROGRAMOVÁNÍ // VLČR</div>
         </div>
       </div>
