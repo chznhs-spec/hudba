@@ -321,3 +321,95 @@ body {
   font-size: 1.3rem;
   opacity: 0.7;
 }
+
+/* Sekce streamovacích platforem pod O nás */
+.platforms-container {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: rgba(18, 18, 26, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  display: inline-block;
+}
+
+.platforms-title {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--text-muted);
+  margin-bottom: 15px;
+}
+
+.platforms-grid {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.platform-link {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.platform-link span {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* Specifické barvy a jemný neon při hoveru pro každou platformu */
+.platform-link:hover {
+  transform: translateY(-2px);
+}
+
+.platform-link:hover .fa-spotify {
+  color: #1db954;
+  filter: drop-shadow(0 0 8px rgba(29, 185, 84, 0.6));
+}
+
+.platform-link:hover .fa-apple {
+  color: #fc3c44;
+  filter: drop-shadow(0 0 8px rgba(252, 60, 68, 0.6));
+}
+
+.platform-link:hover .fa-wave-square {
+  color: #00f0ff;
+  filter: drop-shadow(0 0 8px rgba(0, 240, 255, 0.6));
+}
+
+.platform-link:hover .fa-deezer {
+  color: #ff007f;
+  filter: drop-shadow(0 0 8px rgba(255, 0, 127, 0.6));
+}
+
+/* Oprava třídy pro git řádek v dekonstrukci */
+.lyric-row.loop-git {
+  color: #39ff14;
+  font-family: 'Courier New', monospace;
+  font-size: 1.3rem;
+  opacity: 0.7;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--text-muted);
+  margin-bottom: 40px;
+}
+
+.older-tracks .cover-container {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+.older-tracks:hover .cover-container {
+  opacity: 1;
+}
